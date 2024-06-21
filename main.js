@@ -18,7 +18,7 @@
           {
               appName: "DwAR",
               customerId: "4",
-              campaignName: "Mutual Fund",
+              campaignName: "Mutual_Fund",
               serverUrl: "https://staging.lttl.in/event"
           }
        );
@@ -152,65 +152,65 @@
 
   
     
-      const image_c938f518_d34d15d8_iconGeometry = new THREE.PlaneGeometry(1, 0.21);
-   const image_c938f518_d34d15d8_texture = await loadTexture("assets/mutual-fund-cta.png");
-  const image_c938f518_d34d15d8_image = new THREE.MeshBasicMaterial({
-      map: image_c938f518_d34d15d8_texture,
+      const image_c938f518_d34853c1_iconGeometry = new THREE.PlaneGeometry(1, 0.21);
+   const image_c938f518_d34853c1_texture = await loadTexture("assets/mutual-fund-cta.png");
+  const image_c938f518_d34853c1_image = new THREE.MeshBasicMaterial({
+      map: image_c938f518_d34853c1_texture,
     });
-    const image_c938f518_d34d15d8 = new THREE.Mesh(image_c938f518_d34d15d8_iconGeometry, image_c938f518_d34d15d8_image);
-    image_c938f518_d34d15d8.scale.set(0.5, 0.5, 0.5);
-    image_c938f518_d34d15d8.position.set(0, -0.448, 0.04);
-    image_c938f518_d34d15d8.rotation.set(-0.001, 0, 0);
-    image_c938f518_d34d15d8.userData.clickable = true
+    const image_c938f518_d34853c1 = new THREE.Mesh(image_c938f518_d34853c1_iconGeometry, image_c938f518_d34853c1_image);
+    image_c938f518_d34853c1.scale.set(0.5, 0.5, 0.5);
+    image_c938f518_d34853c1.position.set(0, -0.448, 0.04);
+    image_c938f518_d34853c1.rotation.set(-0.001, 0, 0);
+    image_c938f518_d34853c1.userData.clickable = true
     
-    image_c938f518_d34d15d8.userData.eventName ="Mutual Fund Website"
-const target_imageundefi4025d_iconGeometry = new THREE.PlaneGeometry(1, 0.6346691519105312);
-   const target_imageundefi4025d_texture = await loadTexture("assets/mutual-fund-marker.jpg");
-  const target_imageundefi4025d_image = new THREE.MeshBasicMaterial({
-      map: target_imageundefi4025d_texture,
+    image_c938f518_d34853c1.userData.eventName ="Mutual Fund Website"
+const target_imageundefi1c148_iconGeometry = new THREE.PlaneGeometry(1, 0.6346691519105312);
+   const target_imageundefi1c148_texture = await loadTexture("assets/mutual-fund-marker.jpg");
+  const target_imageundefi1c148_image = new THREE.MeshBasicMaterial({
+      map: target_imageundefi1c148_texture,
     });
-    const target_imageundefi4025d = new THREE.Mesh(target_imageundefi4025d_iconGeometry, target_imageundefi4025d_image);
-    target_imageundefi4025d.scale.set(1, 1, 1);
-    target_imageundefi4025d.position.set(0.01, -0.01, 0.01);
-    target_imageundefi4025d.rotation.set(-0.001, 0, 0);
+    const target_imageundefi1c148 = new THREE.Mesh(target_imageundefi1c148_iconGeometry, target_imageundefi1c148_image);
+    target_imageundefi1c148.scale.set(1, 1, 1);
+    target_imageundefi1c148.position.set(0.01, -0.01, 0.01);
+    target_imageundefi1c148.rotation.set(-0.001, 0, 0);
     
     
     
 
-    const video_asset_3ba021dccfb_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
+    const video_asset_3ba021b6d5f_planeGeometry = new THREE.PlaneGeometry(1, 0.5625);
 
-    const video_asset_3ba021dccfb_Item0Video = await loadVideo("assets/mutual-funds-video.mp4");
+    const video_asset_3ba021b6d5f_Item0Video = await loadVideo("assets/mutual-funds-video.mp4");
 
-    const video_asset_3ba021dccfb_Item0VideoTexture = new THREE.VideoTexture(
-      video_asset_3ba021dccfb_Item0Video
+    const video_asset_3ba021b6d5f_Item0VideoTexture = new THREE.VideoTexture(
+      video_asset_3ba021b6d5f_Item0Video
     );
 
-    let video_asset_3ba021dccfb_Item0VideoMaterial
+    let video_asset_3ba021b6d5f_Item0VideoMaterial
 
-      video_asset_3ba021dccfb_Item0VideoMaterial = new THREE.MeshBasicMaterial({
-          map: video_asset_3ba021dccfb_Item0VideoTexture,
+      video_asset_3ba021b6d5f_Item0VideoMaterial = new THREE.MeshBasicMaterial({
+          map: video_asset_3ba021b6d5f_Item0VideoTexture,
         })
     
-     const video_asset_3ba021dccfb = new THREE.Mesh(
-      video_asset_3ba021dccfb_planeGeometry,
-      video_asset_3ba021dccfb_Item0VideoMaterial
+     const video_asset_3ba021b6d5f = new THREE.Mesh(
+      video_asset_3ba021b6d5f_planeGeometry,
+      video_asset_3ba021b6d5f_Item0VideoMaterial
     );
 
-  video_asset_3ba021dccfb.position.set(0, 0, 0);
+  video_asset_3ba021b6d5f.position.set(0, 0, 0);
 
 
 
   if (isIOS) {
-    video_asset_3ba021dccfb_Item0Video.muted=isIOS
+    video_asset_3ba021b6d5f_Item0Video.muted=isIOS
     muteIconMesh = await loadUnmuteLogo();
     anchor.group.add(muteIconMesh);
   }
 
-  video_asset_3ba021dccfb_Item0Video.loop=true;
+  video_asset_3ba021b6d5f_Item0Video.loop=true;
   
-  video_asset_3ba021dccfb.scale.set(1, 1, 1);
+  video_asset_3ba021b6d5f.scale.set(1, 1, 1);
 
-    video_asset_3ba021dccfb.rotation.set(-0.002, 0, 0);
+    video_asset_3ba021b6d5f.rotation.set(-0.003, 0, 0);
 
     
   
@@ -246,7 +246,7 @@ const target_imageundefi4025d_iconGeometry = new THREE.PlaneGeometry(1, 0.634669
 
         if(isIOS){ 
           if (o.userData.clickable && o === muteIconMesh) {
-            video_asset_3ba021dccfb_Item0Video.muted=false
+            video_asset_3ba021b6d5f_Item0Video.muted=false
     
             anchor.group.remove(muteIconMesh);
             return true;
@@ -259,7 +259,7 @@ const target_imageundefi4025d_iconGeometry = new THREE.PlaneGeometry(1, 0.634669
       if (o.userData.clickable) window.showLoadingScreen();
 
       
-      if (o.userData.clickable && o === image_c938f518_d34d15d8) {
+      if (o.userData.clickable && o === image_c938f518_d34853c1) {
         setTimeout(()=>{
           window.location.href = "https://www.mutualfundssahihai.com/en"
         },100)
@@ -270,9 +270,9 @@ const target_imageundefi4025d_iconGeometry = new THREE.PlaneGeometry(1, 0.634669
     })
     
       
-    anchor.group.add(image_c938f518_d34d15d8)
+    anchor.group.add(image_c938f518_d34853c1)
 
-anchor.group.add(video_asset_3ba021dccfb)
+anchor.group.add(video_asset_3ba021b6d5f)
 
 
     anchor.onTargetFound = () => {
@@ -289,12 +289,12 @@ anchor.group.add(video_asset_3ba021dccfb)
 
 
      
-      video_asset_3ba021dccfb_Item0Video.play();
+      video_asset_3ba021b6d5f_Item0Video.play();
     };
 
 
     anchor.onTargetLost = () => {
-       video_asset_3ba021dccfb_Item0Video.pause();
+       video_asset_3ba021b6d5f_Item0Video.pause();
 
         
 
